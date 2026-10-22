@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+    - devicon link
+  -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!--
+    - early theme initialization to prevent flash
+  -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("vcard_portfolio_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Kalahasthi Venkata Sudheer" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kalahasthi Venkata Sudheer">Venkata Sudheer Kalahasthi</h1>
+
+          <p class="title">CSE Student | Aspiring Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:venkatasudheerkalahasthi@gmail.com" class="contact-link">venkatasudheerkalahasthi@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9398005772" class="contact-link">+91 9398005772</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-05-11">May 11, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ongole, Andhra Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/kalahasthi-venkata-sudheer-39a022322?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/VenkataSudheerKalahasthi" class="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/u/venkata_sudheer_kalahasthi/" class="social-link" target="_blank" rel="noopener noreferrer" title="LeetCode">
+              <svg role="img" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0z" />
+                <path fill="#FFA116" d="M10.617 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/919848148009" class="social-link" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/venkatasudheer.kalahasthi?exln=MWt4YjA4ZjFzdWg0NQ==" class="social-link" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="theme-toggle-btn" data-theme-btn aria-label="Toggle theme" title="Toggle Dark / Light Theme">
+              <ion-icon name="sunny-outline" class="sun-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Computer Science Engineering student from India with a strong interest in Java Full Stack Development, web technologies, and building solutions to real-world problems.
+
+          </p>
+I enjoy transforming complex ideas into simple, intuitive, and user-friendly applications while continuously improving my Java programming and problem-solving skills.
+          <p>
+           I create full-stack applications that are fast, secure, and easy to use, turning ideas into real digital products.
+</p>
+<p>
+My goal is to deliver high-quality work that makes a difference, while always learning new technologies to improve what I build.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-java.svg" alt="Java Full Stack Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Java Full Stack Development</h4>
+
+                <p class="service-item-text">
+                  Building full-stack web applications using Java, Spring Boot, React, and database technologies.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Creating responsive, user-friendly websites with modern frontend technologies and reliable backend systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dsa.svg" alt="Data Structures & Algorithms icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Structures & Algorithms</h4>
+
+                <p class="service-item-text">
+                  Practicing DSA to strengthen logical thinking, master problem-solving, and write efficient code.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-project.svg" alt="Project Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Project Development</h4>
+
+                <p class="service-item-text">
+                  Turning ideas into practical applications by exploring new technologies and solving real-world problems.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>SriRam Prasad Adusumilli</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sudheer demonstrated strong dedication and a positive learning attitude while completing the assigned project. His ability to understand requirements, solve problems, and turn ideas into a working application reflects his commitment to developing his technical skills.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+                
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Yaswanth Chowdary</h4>
+                
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Sudheer in hackathons has been a great experience. He is a proactive problem-solver who enjoys exploring new ideas and turning them into practical solutions. His dedication, willingness to learn, and collaborative mindset make him a great teammate, especially when working under tight deadlines.
+                  </p>
+                </div>
+                
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rishitha Rayapati</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sudheer is a dedicated and collaborative teammate who approaches challenges with a problem-solving mindset. He is always eager to learn new technologies, share ideas, and work together to build practical solutions. His commitment to completing tasks and improving his technical skills makes him a reliable team member.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Soma Siva Kumar Gunji</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Sudheer on multiple projects and hackathons has been an incredible experience. He consistently demonstrates strong problem-solving skills, a creative mindset, and a passion for building technology-driven solutions to real-world challenges. His dedication, adaptability, and ability to collaborate effectively make him a reliable teammate and a great person to build innovative ideas with.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sai Pujeet Thalluri</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+Sudheer is not just a good friend but also a supportive and dedicated coding partner. We both spend time improving our DSA skills, solving challenging problems, and learning new concepts together. He has also helped me with my projects, sharing ideas and guiding me whenever needed. His problem-solving mindset, willingness to help others, and passion for technology make him a great friend and teammate.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Venkatesh Ravula</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+Sudheer is a well-rounded and enthusiastic team member who actively participates in projects, hackathons, sports, and other extracurricular activities. He brings a positive attitude, strong teamwork, and a willingness to take on new challenges. His ability to collaborate with others, share ideas, and balance technical learning with extracurricular involvement makes him a valuable team member and a great friend.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ganesh Nalamalupu</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>Sudheer is a curious and dedicated person who is always eager to learn new technologies and explore new ideas. He approaches challenges with a positive mindset, enjoys solving problems, and never stops improving himself. His willingness to learn, supportive nature, and determination make him a great person to work and grow with.</p>
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+          </ul> 
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header class="resume-header">
+          <h2 class="h2 article-title">Resume</h2>
+
+          <div class="resume-btn-group">
+            <a href="./assets/Sudheer_NasdaqResume.pdf" download="Sudheer_NasdaqResume.pdf" class="resume-btn download-cv-btn" title="Download CV">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download CV</span>
+            </a>
+
+            <a href="./assets/Sudheer_NasdaqResume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn view-cv-btn" title="View Resume">
+              <ion-icon name="eye-outline"></ion-icon>
+            </a>
+          </div>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Qis College of Enginnering and Technology</h4>
+
+              <span>2024 — 2027</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology (B.Tech) — Computer Science and Engineering (CSE).
+                 <br>
+    CGPA: 8.3
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rise Krishna Sai Polytechnic College</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Diploma in CSE
+<br>
+Percentage: 88
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Z.P.H.School,Jammulapalem</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+               Secondary School Certificate (SSC).
+<br>
+Percentage: 99.8
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Google Student Ambassador</h4>
+
+              <span>2025 Jul — Dec</span>
+
+              <p class="timeline-text">
+               Promoted Google developer technologies and learning resources, engaged with students, and encouraged technical learning through community activities, knowledge sharing, and developer awareness initiatives.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance Web Developer</h4>
+              <span>2026</span>
+              <p class="timeline-text">
+                Developed websites and web applications for clients based on their requirements, focusing on responsive design, user experience, and functional features to deliver practical digital solutions.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">LINORA  E-commerce Development</h4>
+
+              <span>2026</span>
+
+              <p class="timeline-text">
+                Developed an e-commerce platform for a clothing brand, focusing on product browsing, responsive user interfaces, and a smooth online shopping experience.
+                </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages - Java C JavaScript</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+<li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend Technologies - HTML CSS React.js Bootstrap</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java Full Stack Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Structures & Algorithms</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database Management - SQL MySQL PostgreSQL</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tools - Git Github VsCode Supabase</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Professional Skillset</h3>
+
+          <div class="skill-badge-card">
+            <ul class="skill-badge-list">
+
+              <li class="skill-badge-item">
+                <i class="devicon-java-plain colored"></i>
+                <span class="skill-badge-name">Core Java</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span class="skill-badge-name">JavaScript</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-c-plain colored"></i>
+                <span class="skill-badge-name">C</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-react-original colored"></i>
+                <span class="skill-badge-name">React.js</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span class="skill-badge-name">HTML5</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span class="skill-badge-name">CSS</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-tailwindcss-plain colored"></i>
+                <span class="skill-badge-name">Tailwind CSS</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <span class="skill-badge-name">Bootstrap</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span class="skill-badge-name">Node.js</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-express-original"></i>
+                <span class="skill-badge-name">Express.js</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-mysql-plain colored"></i>
+                <span class="skill-badge-name">MySQL</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-postgresql-plain colored"></i>
+                <span class="skill-badge-name">PostgreSQL</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d2d3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 13h5" />
+                  <path d="M12 16v-8h3a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-3" />
+                  <path d="M20 8v8" />
+                  <path d="M9 16v-5.5a2.5 2.5 0 0 0 -5 0v5.5" />
+                </svg>
+                <span class="skill-badge-name">Rest Api's</span>
+              </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Tools I Use</h3>
+
+          <div class="skill-badge-card">
+            <ul class="skill-badge-list">
+
+              <li class="skill-badge-item">
+                <i class="devicon-vscode-plain colored"></i>
+                <span class="skill-badge-name">VS Code</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-git-plain colored"></i>
+                <span class="skill-badge-name">Git</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-github-original"></i>
+                <span class="skill-badge-name">GitHub</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-postman-plain colored"></i>
+                <span class="skill-badge-name">Postman</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <i class="devicon-supabase-plain colored"></i>
+                <span class="skill-badge-name">Supabase</span>
+              </li>
+
+              <li class="skill-badge-item">
+                <svg role="img" viewBox="0 0 24 24" width="22" height="22" fill="#EA4B71" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.422 5.053c-1.176-.94-2.651-1.424-4.137-1.353h-2.756c-.588 0-1.116.353-1.332.895l-.176.442c-.22.548-.752.906-1.346.906h-.998c-.594 0-1.126-.358-1.346-.906l-.176-.442c-.216-.542-.744-.895-1.332-.895H5.06c-1.486-.071-2.961.413-4.137 1.353-1.177.94-1.859 2.37-1.841 3.873.018 1.503.73 2.923 1.926 3.841 1.196.917 2.744 1.258 4.22.941h.392c.588 0 1.116.353 1.332.895l.176.442c.22.548.752.906 1.346.906h.998c.594 0 1.126-.358 1.346-.906l.176-.442c.216-.542.744-.895 1.332-.895h2.756c1.486.071 2.961-.413 4.137-1.353 1.177-.94 1.859-2.37 1.841-3.873-.018-1.503-.73-2.923-1.926-3.841Zm-2.78 4.791c-.742 0-1.344-.602-1.344-1.344s.602-1.344 1.344-1.344 1.344.602 1.344 1.344-.602 1.344-1.344 1.344ZM5.358 14.88c-.742 0-1.344-.602-1.344-1.344s.602-1.344 1.344-1.344 1.344.602 1.344 1.344-.602 1.344-1.344 1.344Zm6.642-3.136c-.742 0-1.344-.602-1.344-1.344s.602-1.344 1.344-1.344 1.344.602 1.344 1.344-.602 1.344-1.344 1.344Zm6.642 5.264c-.742 0-1.344-.602-1.344-1.344s.602-1.344 1.344-1.344 1.344.602 1.344 1.344-.602 1.344-1.344 1.344Z"/>
+                </svg>
+                <span class="skill-badge-name">N8n</span>
+              </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">What I've Built</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://github.com" data-fit="contain" data-project-theme="trustpay">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpeg" alt="TrustPay" loading="lazy" class="project-img-dark" data-project-dark-img>
+                  <img src="./assets/images/project-1-light.png" alt="TrustPay" loading="lazy" class="project-img-light" data-project-light-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>TrustPay</h3>
+
+                <p class="project-category" data-project-category>Full-Stack Web Development(Payment Gateway Integration)</p>
+
+              </a>
+
+              <!-- Project Description Content (Supports unlimited rich text, paragraphs, lists, and tags) -->
+              <div class="project-desc-content" data-project-desc hidden>
+                <p>
+                  <strong>TrustPay</strong> is an advanced digital payment and escrow platform built to ensure secure, transparent, and frictionless financial transactions between clients, businesses, and freelance professionals.
+                </p>
+
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Smart Escrow System:</strong> Holds funds securely in escrow until milestones and deliverables are verified.</li>
+                  <li><strong>Instant Settlements:</strong> Automated payment disbursement with zero processing lag once approved.</li>
+                  <li><strong>Fraud & Risk Detection:</strong> Real-time heuristic checks to mitigate payment anomalies and ensure dispute protection.</li>
+                  <li><strong>Analytics Dashboard:</strong> Comprehensive revenue charts, payout logs, and transaction invoicing.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="project-modal-tech-list">
+                  <span class="project-tech-badge">React.js</span>
+                  <span class="project-tech-badge">Node.js</span>
+                  <span class="project-tech-badge">Express</span>
+                  <span class="project-tech-badge">PostgreSQL</span>
+                  <span class="project-tech-badge">JWT Auth</span>
+                  <span class="project-tech-badge">Prisma</span>
+                  <span class="project-tech-badge">Socket.io</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://github.com" data-fit="contain" data-project-theme="linora">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="LINORA" loading="lazy" class="project-img-dark" data-project-dark-img>
+                  <img src="./assets/images/project-2-light.png" alt="LINORA" loading="lazy" class="project-img-light" data-project-light-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>LINORA</h3>
+
+                <p class="project-category" data-project-category>FullStack Web development</p>
+
+              </a>
+
+              <div class="project-desc-content" data-project-desc hidden>
+                <p>
+                  <strong>LINORA</strong> is a bespoke modern e-commerce platform developed for a premier apparel and men's fashion clothing brand. Built with a focus on effortless tailoring, sleek product curation, and an immersive online shopping journey.
+                </p>
+
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Interactive Product Catalog:</strong> Dynamic shirt showcase with real-time size, fit, and bundle selectors.</li>
+                  <li><strong>Seamless Checkout Funnel:</strong> Streamlined multi-step cart, coupon discounts, and secure payment processing.</li>
+                  <li><strong>Responsive Lookbook & Bundles:</strong> Curated everyday wear collections with fluid typography and quick-view modals.</li>
+                  <li><strong>Customer Accounts & Tracking:</strong> Live order status tracking, user wishlists, and purchase histories.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="project-modal-tech-list">
+                  <span class="project-tech-badge">React.js</span>
+                  <span class="project-tech-badge">Node.js</span>
+                  <span class="project-tech-badge">Tailwind CSS</span>
+                  <span class="project-tech-badge">Redux Tool Kit</span>
+                  <span class="project-tech-badge">Rest Api's</span>
+                  <span class="project-tech-badge">Express.js</span>
+                  <span class="project-tech-badge">Supabase PostgreSQL</span>
+                  <span class="project-tech-badge">Payment Gateway</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://github.com" data-fit="contain" data-project-theme="collegedsa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="College DSA Rankboard" loading="lazy" class="project-img-dark" data-project-dark-img>
+                  <img src="./assets/images/project-3-light.png" alt="College DSA Rankboard" loading="lazy" class="project-img-light" data-project-light-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>College DSA Rankboard</h3>
+
+                <p class="project-category" data-project-category>Full-Stack Web Development(WEB Scrapping)</p>
+
+              </a>
+
+              <div class="project-desc-content" data-project-desc hidden>
+                <p>
+                  <strong>College DSA Rankboard</strong> is a centralized competitive coding benchmark and student performance analytics platform developed for university coding communities.
+                </p>
+
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Multi-Platform Sync:</strong> Real-time data aggregation across LeetCode, CodeChef, HackerRank, GeeksforGeeks, and Codeforces.</li>
+                  <li><strong>Live Leaderboard Rankings:</strong> Dynamic college-wide and batch-wise leaderboards celebrating top competitive programmers.</li>
+                  <li><strong>Topic Mastery Breakdown:</strong> Deep-dive problem analytics across Arrays, Linked Lists, Trees, DP, and Graph algorithms.</li>
+                  <li><strong>Performance Scoring Algorithm:</strong> Normalized scoring metrics that accurately benchmark student DSA consistency and ratings.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="project-modal-tech-list">
+                  <span class="project-tech-badge">React.js</span>
+                  <span class="project-tech-badge">Tailwind CSS</span>
+                  <span class="project-tech-badge">Node.js</span>
+                  <span class="project-tech-badge">Express.js</span>
+                  <span class="project-tech-badge">Clerk Auth</span>
+                  <span class="project-tech-badge">REST APIs</span>
+                  <span class="project-tech-badge">Web Scraping</span>
+                  <span class="project-tech-badge">Vite js</span>
+                  <span class="project-tech-badge">PostgreSQL</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications" data-project-item data-project-url="https://codeorbit-dsa.vercel.app/" data-fit="contain" data-project-theme="codeorbit">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="CodeOrbit" loading="lazy" class="project-img-dark" data-project-dark-img>
+                  <img src="./assets/images/project-4-light.png" alt="CodeOrbit" loading="lazy" class="project-img-light" data-project-light-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>CodeOrbit</h3>
+
+                <p class="project-category" data-project-category>Fullstack Web Development</p>
+
+              </a>
+
+              <div class="project-desc-content" data-project-desc hidden>
+                <p>
+                  <strong>CodeOrbit</strong> is an innovative gamified DSA exploration platform that maps data structures and algorithm challenges into an interactive celestial orbit graph.
+                </p>
+
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Orbital Challenge Map:</strong> Concentric orbital rings organizing coding problems from fundamental to advanced mastery levels.</li>
+                  <li><strong>Interactive Constellations:</strong> Clickable glowing planetary nodes representing data structure problem sets.</li>
+                  <li><strong>Top Contestant Arena:</strong> Competitive streak leaderboards displaying top problem solvers with star badges and achievements.</li>
+                  <li><strong>DSA Interview Roadmaps:</strong> Structured step-by-step milestone journeys designed for product-based company interview prep.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="project-modal-tech-list">
+                  <span class="project-tech-badge">HTML</span>
+                  <span class="project-tech-badge">CSS3</span>
+                  <span class="project-tech-badge">JavaScript(Es6+)</span>
+                  <span class="project-tech-badge">PostgreSQL</span>
+                  <span class="project-tech-badge">Node.js</span>
+                  <span class="project-tech-badge">Express.js</span>
+                  <span class="project-tech-badge">Supabase Realtime & Supabase Auth</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://aryavysyacommittee.vercel.app/" data-fit="contain" data-project-theme="ganesh">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5-clean.png" alt="Ganesh Utsav Committee Vysya Bazaar" loading="lazy" class="project-img-dark" data-project-dark-img>
+                  <img src="./assets/images/project-5-light.png" alt="Ganesh Utsav Committee Vysya Bazaar" loading="lazy" class="project-img-light" data-project-light-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Token Booking System</h3>
+
+                <p class="project-category" data-project-category>Fronend development(UPI Payment Integration)</p>
+
+              </a>
+
+              <div class="project-desc-content" data-project-desc hidden>
+                <p>
+                  <strong>Ganesh Utsav Committee Vysya Bazaar</strong> is an official community and festival web application built for the grand Vinayaka Chavithi celebrations in Jammulapalem, Tangutur(M), Andhra Pradesh.
+                </p>
+
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Digital Lucky Draw Booking:</strong> Secure online ticket booking (₹100) for the sacred 22 KG Maha Laddu blessing draw.</li>
+                  <li><strong>Live Ticket Status Lookup:</strong> Instant "Check Status" search enabling devotees to verify registered tickets and download receipts.</li>
+                  <li><strong>Festival Events & Pooja Schedule:</strong> Comprehensive cultural program timelines, daily pooja timings, and committee notices.</li>
+                  <li><strong>Transparent Winner Announcements:</strong> Real-time lucky draw result publishing with historical winner records and committee contact.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="project-modal-tech-list">
+                  <span class="project-tech-badge">JavaScript</span>
+                  <span class="project-tech-badge">HTML5 / CSS3</span>
+                  <span class="project-tech-badge">UPI Gateway Integration</span>
+                  <span class="project-tech-badge">Database API</span>
+                  <span class="project-tech-badge">Responsive UI</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - #PROJECT DETAILS MODAL
+        -->
+        <div class="modal-container project-modal-container" data-project-modal-container>
+
+          <div class="overlay" data-project-overlay></div>
+
+          <section class="project-modal">
+
+            <button class="project-modal-close-btn" data-project-modal-close-btn aria-label="Close project modal">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="project-modal-banner">
+              <img src="./assets/images/project-1.jpeg" alt="Project Preview" data-project-modal-img>
+            </div>
+
+            <div class="project-modal-content">
+
+              <div class="project-modal-header">
+                <div>
+                  <span class="project-modal-tag" data-project-modal-category>Web development</span>
+                  <h3 class="h3 project-modal-title" data-project-modal-title>TrustPay</h3>
+                </div>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-modal-link-btn" data-project-modal-btn>
+                  <span>View Project</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+
+              <div class="project-modal-body has-scrollbar" data-project-modal-text>
+                <!-- Populated dynamically from project item data -->
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61539.04374345271!2d80.0270425!3d15.5057209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4bba89d702d84d%3A0xc33e50529d8995a!2sOngole%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+            <div class="form-status-msg" data-form-status></div>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - EmailJS SDK & config
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./assets/js/emailjs-config.js?v=2"></script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js?v=2"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

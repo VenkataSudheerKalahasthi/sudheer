@@ -1,0 +1,12 @@
+{
+  "name": "vcard-personal-portfolio",
+  "version": "1.0.0",
+  "description": "vCard - Personal Portfolio",
+  "scripts": {
+    "dev": "npx --yes live-server . --port=3000",
+    "start": "npx --yes live-server . --port=3000"
+  },
+  "keywords": ["portfolio", "vcard", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT"
+}

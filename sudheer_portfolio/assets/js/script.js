@@ -491,3 +491,9 @@ if (projectItems.length > 0 && projectModalContainer) {
     }
   });
 }
+
+// Update copyright year dynamically
+const copyrightYearEl = document.getElementById("copyright-year");
+if (copyrightYearEl) {
+  copyrightYearEl.textContent = new Date().getFullYear();
+}

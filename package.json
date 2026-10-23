@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "vCard - Personal Portfolio",
   "scripts": {
-    "dev": "npx --yes live-server vcard-personal-portfolio-master --port=3000",
-    "start": "npx --yes live-server vcard-personal-portfolio-master --port=3000"
+    "dev": "npx --yes live-server sudheer_portfolio --port=3000",
+    "start": "npx --yes live-server sudheer_portfolio --port=3000"
   },
   "keywords": ["portfolio", "vcard", "html", "css", "javascript"],
   "author": "",

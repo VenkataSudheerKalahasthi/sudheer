@@ -16,13 +16,14 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium.css">
 
   <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
 
   <!--
     - devicon link
@@ -37,6 +38,12 @@
       const savedTheme = localStorage.getItem("vcard_portfolio_theme") || "dark";
       document.documentElement.setAttribute("data-theme", savedTheme);
     })();
+  </script>
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
   </script>
 </head>
 
@@ -236,7 +243,9 @@
 
       <article class="about  active" data-page="about">
 
-        <header>
+        <div class="about-hero">
+          <div class="about-copy">
+          <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
 
@@ -245,7 +254,7 @@
             I'm a Computer Science Engineering student from India with a strong interest in Java Full Stack Development, web technologies, and building solutions to real-world problems.
 
           </p>
-I enjoy transforming complex ideas into simple, intuitive, and user-friendly applications while continuously improving my Java programming and problem-solving skills.
+<p>I enjoy transforming complex ideas into simple, intuitive, and user-friendly applications while continuously improving my Java programming and problem-solving skills.</p>
           <p>
            I create full-stack applications that are fast, secure, and easy to use, turning ideas into real digital products.
 </p>
@@ -253,6 +262,16 @@ I enjoy transforming complex ideas into simple, intuitive, and user-friendly app
 My goal is to deliver high-quality work that makes a difference, while always learning new technologies to improve what I build.
           </p>
         </section>
+          <div class="about-actions">
+            <button class="btn btn-primary" type="button" data-goto="Projects"><span>View projects</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></button>
+            <a class="btn btn-ghost" href="./assets/Sudheer_NasdaqResume.pdf" download><span>Download resume</span><ion-icon name="download-outline" aria-hidden="true"></ion-icon></a>
+            <button class="btn btn-ghost" type="button" data-goto="Contact"><span>Contact me</span><ion-icon name="mail-outline" aria-hidden="true"></ion-icon></button>
+          </div>
+          </div>
+          <div class="about-avatar-wrap" role="img" aria-label="Developer avatar illustration">
+            <img src="./assets/images/avatar-developer.png" alt="Venkata Sudheer Kalahasthi - Developer Avatar" class="about-avatar-img" width="520" height="413" loading="eager">
+          </div>
+        </div>
 
 
         <!--
@@ -888,7 +907,7 @@ Percentage: 99.8
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://github.com" data-fit="contain" data-project-theme="trustpay">
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="" data-fit="contain" data-project-theme="trustpay">
               <a href="#">
 
                 <figure class="project-img">
@@ -978,7 +997,7 @@ Percentage: 99.8
               </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="https://github.com" data-fit="contain" data-project-theme="collegedsa">
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item data-project-url="" data-fit="contain" data-project-theme="collegedsa">
               <a href="#">
 
                 <figure class="project-img">
@@ -1139,7 +1158,7 @@ Percentage: 99.8
                   <h3 class="h3 project-modal-title" data-project-modal-title>TrustPay</h3>
                 </div>
 
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-modal-link-btn" data-project-modal-btn>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-modal-link-btn" data-project-modal-btn hidden>
                   <span>View Project</span>
                   <ion-icon name="open-outline"></ion-icon>
                 </a>
@@ -1244,7 +1263,8 @@ Percentage: 99.8
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js?v=2"></script>
+  <script src="./assets/js/script.js?v=3"></script>
+  <script type="module" src="./assets/js/premium.js"></script>
 
   <!--
     - ionicon link

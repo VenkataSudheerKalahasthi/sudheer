@@ -468,8 +468,15 @@ if (projectItems.length > 0 && projectModalContainer) {
       }
 
       if (projectModalBtn) {
-        projectModalBtn.href = projectUrl;
-        projectModalBtn.style.display = "inline-flex";
+        const hasRealUrl = /^https?:\/\//.test(projectUrl) && projectUrl.replace(/\/$/, "") !== "https://github.com";
+        projectModalBtn.hidden = !hasRealUrl;
+        if (hasRealUrl) {
+          projectModalBtn.href = projectUrl;
+          projectModalBtn.style.display = "inline-flex";
+        } else {
+          projectModalBtn.removeAttribute("href");
+          projectModalBtn.style.display = "none";
+        }
       }
 
       toggleProjectModal();

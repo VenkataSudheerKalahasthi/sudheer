@@ -17,13 +17,15 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/premium.css">
+  <link rel="stylesheet" href="./assets/css/intro.css">
+  <link rel="stylesheet" href="./assets/css/shortcuts.css">
 
   <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!--
     - devicon link
@@ -31,12 +33,19 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <!--
-    - early theme initialization to prevent flash
+    - early theme initialization and pure black intro lock
   -->
+  <style>
+    html.intro-active, body.intro-active {
+      background-color: #000000 !important;
+      overflow: hidden !important;
+    }
+  </style>
   <script>
     (function () {
       const savedTheme = localStorage.getItem("vcard_portfolio_theme") || "dark";
       document.documentElement.setAttribute("data-theme", savedTheme);
+      document.documentElement.classList.add("intro-active");
     })();
   </script>
   <script type="importmap">
@@ -47,7 +56,30 @@
   </script>
 </head>
 
-<body>
+<body class="intro-active">
+
+  <!--
+    - #INTRO OVERLAY (Stage 1: Words Animation & Stage 2: Let's Connect)
+  -->
+  <div id="intro-overlay" class="intro-overlay" aria-label="Introduction Animation" role="region">
+    <div class="intro-overlay-content">
+      <div id="intro-word-container" class="intro-word-container" aria-live="polite">
+        <span id="intro-word" class="intro-word"></span>
+      </div>
+
+      <div id="intro-cta-container" class="intro-cta-container" style="display: none;">
+        <button id="intro-connect-btn" class="intro-connect-btn" type="button" aria-label="Let's Connect - Enter Portfolio">
+          <span class="intro-btn-text">Let’s Connect</span>
+          <span class="intro-btn-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="13 6 19 12 13 18"></polyline>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!--
     - #MAIN
@@ -1263,6 +1295,8 @@ Percentage: 99.8
   <!--
     - custom js link
   -->
+  <script src="./assets/js/intro.js"></script>
+  <script src="./assets/js/shortcuts.js"></script>
   <script src="./assets/js/script.js?v=3"></script>
   <script type="module" src="./assets/js/premium.js"></script>
 

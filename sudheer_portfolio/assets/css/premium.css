@@ -366,8 +366,59 @@ main { position: relative; z-index: 1; }
 /* ---------- Contact form ---------- */
 .form-input { border-radius: 14px; transition: border-color var(--t-fast), box-shadow var(--t-base) var(--ease-out); }
 .form-input:focus { border-color: var(--vegas-gold); box-shadow: 0 0 0 3px rgba(201,166,107,.28); outline: none; }
-.form-btn { border-radius: 14px; }
-.form-btn[disabled] { opacity: .6; cursor: not-allowed; }
+.form-btn {
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-base) var(--ease-out), color var(--t-fast) var(--ease-out), background-color var(--t-base) var(--ease-out);
+}
+.form-btn:not([disabled]):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(201, 166, 107, 0.28);
+}
+.form-btn[disabled] {
+  opacity: .55;
+  cursor: not-allowed;
+}
+.form-btn span,
+.form-btn ion-icon {
+  color: inherit;
+  transition: color var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out);
+}
+.form-btn:hover ion-icon {
+  transform: translateX(3px) translateY(-1px);
+}
+
+/* Light theme: ensure Send Message text is 100% visible and high-contrast on hover */
+[data-theme="light"] .form-btn {
+  color: var(--orange-yellow-crayola);
+  border: 1px solid var(--jet);
+}
+
+[data-theme="light"] .form-btn:hover,
+[data-theme="light"] .form-btn:focus-visible {
+  color: #242321 !important;
+  background: var(--gold) !important;
+}
+
+[data-theme="light"] .form-btn:hover span,
+[data-theme="light"] .form-btn:hover ion-icon {
+  color: #242321 !important;
+}
+
+[data-theme="light"] .form-btn:hover::before,
+[data-theme="light"] .form-btn:focus-visible::before {
+  opacity: 0 !important;
+}
+
+[data-theme="light"] .form-btn[disabled]:hover {
+  color: var(--light-gray-70) !important;
+  background: var(--border-gradient-onyx) !important;
+}
+
+[data-theme="light"] .form-btn[disabled]:hover::before {
+  opacity: 1 !important;
+  background: var(--bg-gradient-jet) !important;
+}
 
 /* ---------- Scroll reveal (only when JS is active) ---------- */
 .js-motion .reveal { opacity: 0; transform: translateY(14px); }

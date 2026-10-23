@@ -137,23 +137,32 @@ const checkFormValidity = function () {
 
   return (
     form.checkValidity() &&
-    fullname.length >= 2 &&
+    fullname.length >= 1 &&
     isValidEmail(email) &&
-    subject.length >= 2 &&
-    message.length >= 5
+    subject.length >= 1 &&
+    message.length >= 1
   );
+};
+
+// Update button disabled state
+const updateFormButton = function () {
+  if (!formBtn) return;
+  if (checkFormValidity()) {
+    formBtn.removeAttribute("disabled");
+  } else {
+    formBtn.setAttribute("disabled", "");
+  }
 };
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-    if (checkFormValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-  });
+  formInputs[i].addEventListener("input", updateFormButton);
+  formInputs[i].addEventListener("change", updateFormButton);
+  formInputs[i].addEventListener("keyup", updateFormButton);
 }
+
+// Initial check
+updateFormButton();
 
 // Track submission state to prevent duplicate submissions
 let isSubmitting = false;
@@ -236,10 +245,13 @@ if (form) {
     const templateParams = {
       from_name: fullname,
       name: fullname,
+      user_name: fullname,
       from_email: email,
       email: email,
+      user_email: email,
       reply_to: email,
       subject: subject,
+      title: subject,
       message: message,
       to_name: "Venkata Sudheer Kalahasthi",
       to_email: "venkatasudheerkalahasthi@gmail.com"
@@ -248,7 +260,12 @@ if (form) {
     try {
       emailjs.init({ publicKey: publicKey });
 
-      const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      const response = await emailjs.send(
+        serviceID,
+        templateID,
+        templateParams,
+        { publicKey: publicKey }
+      );
 
       // Verify that the email service confirms delivery (HTTP 200 / OK)
       if (response && (response.status === 200 || response.text === "OK")) {
@@ -257,11 +274,12 @@ if (form) {
           formStatus.textContent = "Thank you! Your message has been sent successfully. I will get back to you soon.";
         }
         form.reset();
-        formBtn.setAttribute("disabled", "");
+        updateFormButton();
       } else {
         throw new Error(response?.text || "The email service did not confirm delivery.");
       }
     } catch (error) {
+      console.error("EmailJS submission error:", error);
       if (formStatus) {
         formStatus.className = "form-status-msg error active";
         const errorMsg =
@@ -270,7 +288,7 @@ if (form) {
           "Failed to send message. Please verify your EmailJS credentials and network connection.";
         formStatus.textContent = `Error: ${errorMsg}`;
       }
-      formBtn.removeAttribute("disabled");
+      updateFormButton();
     } finally {
       isSubmitting = false;
       formBtn.style.pointerEvents = "";
